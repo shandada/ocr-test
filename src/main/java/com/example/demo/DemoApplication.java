@@ -10,6 +10,6 @@ public class DemoApplication {
         SpringApplication.run(DemoApplication.class, args);
         System.out.println("启动成功 !!");
         System.out.println("启动成功 !!");
-        System.out.println("启动成功 !!");
+        System.out.println("启动成功 !!3");
     }
 }
