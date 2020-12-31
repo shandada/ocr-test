@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Read Me 图书网</title>
+<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="js/Readme.js"></script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body>
+<div class="top">
+  <div class="logo"> <a href="Read_Me.html">Read Me</a> </div>
+  <div class="wel">阅读我，给你畅游书海的乐趣！<br>
+    等待你的到来！</div>
+  <div id="time">
+    <form name="record" method="post" action="">
+      浏览时长:
+      <input name="area" type="text" value="">
+    </form>
+  </div>
+  <div class="detail">
+    <ul>
+      <li><a href="#">语言<span class="icon"></span></a>
+        <ul>
+          <li><a href="#">中国站：简体中文</a></li>
+          <li><a href="#">国际站：English</a></li>
+        </ul>
+      </li>
+      <li><a href="#">我的<span class="icon"></span></a>
+        <ul class="list2">
+          <li><a href="#">账户信息</a></li>
+          <li><a href="#">设置</a></li>
+        </ul>
+      </li>
+      <li><a href="#">我的云书房</a></li>
+      <li><a href="#">我的购物车</a></li>
+    </ul>
+    <div class="clear"></div>
+  </div>
+</div>
+<!--top-->
+<div id="nav">
+  <div id="mulu">
+    <ul>
+      <li><a href="#nav">首页</a></li>
+      <li><a href="#goal">Read Me动态</a></li>
+      <li><a href="#" onClick="f1()">藏书阁</a></li>
+      <li><a href="#">网站导航<span class="icon"></span></a>
+        <ul class="list1">
+          <li><a href="#">资源中心</a></li>
+          <li><a href="#">帮助</a></li>
+          <li><a href="#">关于我们</a></li>
+        </ul>
+      </li>
+      <li><a href="#">最新活动</a></li>
+      <li><a href="#login_page">登录</a></li>
+    </ul>
+  </div> <!--mulu--> 
+ 
+</div>
+<div class="content">
+  <div id="main">
+    <div id="sort">
+      <ul id="book1">
+        <li class="f"><a href="#">经典</a></li>
+        <li class="s"><a href="#">科技</a></li>
+        <li class="t"><a href="#">教育</a></li>
+        <li class="f1"><a href="#">生活</a></li>
+        <li class="f2"><a href="#">艺术</a></li>
+        <li class="s"><a href="#">电子书</a></li>
+        <li class="s1"><a href="#">听书</a></li>
+      </ul>
+    </div>
+    <!--sort-->
+    <div id="search">
+      <form id="form">
+        <input class="in1" name="search" type="text" placeholder="请输入您要搜索的关键字">
+        <button onclick="f2()">搜索</button>
+        <!--input class="ou1" type="submit" name="send"  value="搜索"-->
+      </form>
+      <a href="#">智能推荐</a> 
+	</div>  <!--search-->
+  
+    <div id="tu">
+      <div class="c-banner">
+        <div class="banner">
+          <ul>
+            <li><img src="images/book1.jpg" width="1000"></li>
+            <li><img src="images/lunbo1.jpg" ></li>
+            <li><img src="images/book2.jpg" ></li>
+            <li><img src="images/lunbo2.jpg"></li>
+            <li><img src="images/shan.png"></li>
+            <li><img src="images/book3.jpg" ></li>
+          </ul>
+        </div>
+        <!--banner-->
+        <div class="nexImg"><img src="images/nexImg.png" /></div>
+        <div class="preImg"><img src="images/preImg.png" /></div>
+        <div class="jumpBtn">
+          <ul>
+            <li jumpImg="0"></li>
+            <li jumpImg="1"></li>
+            <li jumpImg="2"></li>
+            <li jumpImg="3"></li>
+            <li jumpImg="4"></li>
+            <li jumpImg="5"></li>
+          </ul>
+        </div><!--jumpBtn--> 
+        
+      </div>  <!--c-banner--> 
+    
+    </div><!--tu-->
+	
+    
+    <div id="dontai">
+      <ul class="share">
+        <li><a href="#" class="note">读者之窗<span>来看看读者最近在读写什么吧！</span></a></li>
+        <li><a href="#" class="note">书评专栏<span>这里是优美的书评，让人流连忘返！</span></a></li>
+        <li><a href="#" class="note">我要投稿<span>投稿有奖，发挥你的智慧时候到了！</span></a></li>
+      </ul>
+    </div>
+  </div> <!--main-->
+  <div id="goal">
+    <h2>我们的宗旨</h2>
+    <div class="line green"><span> </span></div>
+    <h4>致力于创新的图书网站，让阅读更加高效有趣，打造影响世界的品牌</h4>
+    <div class="services_grids">
+      <div class="grid_1_of_4 services_1_of_4"> <img src="images/flag.png" id="t1" alt="品牌" />
+        <h3>品牌化</h3>
+        <p>赋予产品和服务与众不同的特点，准确市场定位，创造自己！</p>
+      </div>
+      <div class="grid_1_of_4 services_1_of_4"> <img src="images/design.png" id="t2" alt="设计" />
+        <h3>行动派</h3>
+        <p>社会在发展，我在行动，跟随时代不断进步，充分承担起责任。</p>
+      </div>
+      <div class="grid_1_of_4 services_1_of_4"> <img src="images/development.png" id="t3" alt="创新" />
+        <h3>创新发展</h3>
+        <p>坚持以观念创新为先导、战略创新为方向、组织创新为保障、技术创新为手段！</p>
+      </div>
+      <div class="grid_1_of_4 services_1_of_4"> <img src="images/rocket.png" id="t4" alt="高效" />
+        <h3>高效执行</h3>
+        <p>打造高效执行的团队，保持团队竞争力！</p>
+      </div>
+    </div>
+  </div><!--goal-->
+
+<div id="login">
+  <div id="login_page">
+    <div class="login1">
+      <form action="#" method="post">
+        <input type="text" name="name" class="name" placeholder="Usename" required>
+        <input type="password" name="password" class="password" placeholder="Password" required>
+        <div class="wthree-text">
+          <ul>
+            <li>
+              <label class="anim">
+                <input type="checkbox" class="checkbox" required>
+                <span>七天内自动登录</span> </label>
+            </li>
+            <li><a href="#">忘记密码?</a></li>
+          </ul>
+        </div>
+        <div class="clear"></div>
+        <input type="submit" value="Login" onclick="check()">
+      </form>
+      <p><a href="#">创建账号？</a></p>
+    </div>
+  </div><!--login_page-->
+  
+  <div id="right"> <span>© 2020 CZH. All rights Reserved</span> </div><!--rightt--> 
+  
+</div><!--login-->
+
+
+</div><!--content-->
+
+</body>
+</html>
