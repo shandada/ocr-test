@@ -9,6 +9,7 @@ import java.io.UnsupportedEncodingException;
  * @Auther: logo丶西亚卡姆
  * @Date: 2020/9/26 11:54
  */
+//图片识别
 public class del {
         private static int flag = 1;
     public static void main(String[] args) throws UnsupportedEncodingException {
