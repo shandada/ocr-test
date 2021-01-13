@@ -26,7 +26,7 @@
 
     <!-- dependencyManagement只是用于限定子项目的jar包的版本，不做实际导包操作   -->
     <dependencies>
-        <!--        图像识别-->
+        <!--       2 图像识别-->
         <dependency>
             <groupId>com.baidu.aip</groupId>
             <artifactId>java-sdk</artifactId>
