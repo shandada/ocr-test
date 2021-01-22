@@ -13,7 +13,8 @@ public class FileUtil {
         // 读取filename    "a.docx"/a.docx
 
         //
-        bis = new BufferedInputStream(new FileInputStream(new File("D:\\work\\fuma\\code\\springboot-test\\fiel\\" +"a.docx")));
+        bis = new BufferedInputStream(new FileInputStream(new File("D:\\work\\fuma\\code\\springboot-test\\fiel\\" + "c.docx")));
+
         int i = bis.read(buff);
         while (i != -1) {
 //            name 文件名, NewType .文件类型 例如: .docx  .pdf .png
@@ -23,6 +24,7 @@ public class FileUtil {
             outputStream.flush();
             i = bis.read(buff);
         }
+
     }
 
 }

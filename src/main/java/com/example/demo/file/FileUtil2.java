@@ -4,7 +4,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 
-// 文件下载工具类
+/**
+ * // 文件下载工具类
+ * @author Administrator
+ */
 public class FileUtil2 {
     public static void download(String filenameUrl, HttpServletResponse res, HttpServletRequest request) throws IOException {
         // 发送给客户端的数据
@@ -32,5 +35,6 @@ public class FileUtil2 {
             outputStream.flush();
             i = bis.read(buff);
         }
+
     }
 }

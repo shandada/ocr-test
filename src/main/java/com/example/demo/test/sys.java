@@ -36,11 +36,19 @@ public class sys {
         String s = "RabbitMQ.md";
 
         String[] ss = s.split("\\.");
-        System.out.println(ss[0]);
-        System.out.println(ss[1]);
-        SimpleDateFormat df = new SimpleDateFormat("HH.mm.ss");//设置日期格式
-        System.out.println(df.format(new Date()));// new Date()为获取当前系统时间
+//        System.out.println(ss[0]);
+//        System.out.println(ss[1]);
+        SimpleDateFormat df = new SimpleDateFormat("YYYY-MM-DD HH:mm:ss");//设置日期格式
+//        System.out.println(df.format(new Date()));// new Date()为获取当前系统时间
+//        System.err.println("s1"+"\n"+"s2");
+        
 
-        System.err.println("s1"+"\n"+"s2");
+        int all=0;
+        int[] a={1,2,3,4,5};
+        for (int i = 0; i < a.length; i++) {
+            int i1 = a[i];
+            all+=i1;
+        }
+            System.out.println(all);
     }
 }

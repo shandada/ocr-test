@@ -2,7 +2,6 @@ package com.example.demo.io;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-//import org.apache.commons.lang.StringUtils;
 import java.util.ArrayList;
 
 /**
@@ -27,5 +26,6 @@ public class test01 {
         System.out.println("a:  "+a);
         String x ="a.jpg";
         x.substring(0,x.lastIndexOf("."));
+
     }
 }

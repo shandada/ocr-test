@@ -11,11 +11,14 @@ import javax.activation.MimetypesFileTypeMap;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+
+ http://localhost:8070/file/download?fileName=a.docx /a.txt
+ */
 @RequestMapping("/file")
 @RestController
 public class FileDealController {
-//http://localhost:8070/file/download?fileName=a.docx /a.txt
-    @RequestMapping(value = "/download")
+    @GetMapping(value = "/download")
     public void download(@RequestParam("fileName") String filename) throws IOException {
         ServletRequestAttributes requestAttributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletResponse response = requestAttributes.getResponse();
@@ -35,3 +38,6 @@ public class FileDealController {
 //        return "SpringBoot";
 //    }
 }
+
+
+

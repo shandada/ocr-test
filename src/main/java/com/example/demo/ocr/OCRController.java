@@ -6,6 +6,7 @@ import org.json.JSONObject;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
@@ -18,11 +19,16 @@ import java.util.List;
 import java.util.Map;
 
 import com.alibaba.fastjson.JSONArray;
+
+import javax.annotation.Resource;
 //图片 文字识别生成文档
 
 /**
- * //图片字识别生成文档
+ * @Description: 图像文字识别
+ * @Auther: logo丶西亚卡姆
+ * @Date: 2021/1/6 16:19
  */
+@SuppressWarnings("ALL")
 @Controller
 public class OCRController {
     //接口申请免费，请自行申请使用，如果学习使用可以用下
@@ -31,10 +37,12 @@ public class OCRController {
 //    public static final String SECRET_KEY = "gbDodnochc8jYjlAHADDgyyas9mrlmkF";
 
 
+
     public static final String APP_ID = "22255662";
     public static final String API_KEY = "UwzUPGz47W1BayXQmE8eBLgI";
     public static final String SECRET_KEY = "wMwWP2MInzGWveotVYUm3x03PwsQiniH";
 
+    @SuppressWarnings("AlibabaRemoveCommentedCode")
     @ResponseBody
     @PostMapping("ocrimg")
     public String ocrimg(MultipartFile file) throws IOException {

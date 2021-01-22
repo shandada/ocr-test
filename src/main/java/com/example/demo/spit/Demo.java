@@ -1,5 +1,7 @@
 package com.example.demo.spit;
 
+import java.util.UUID;
+
 /**
  * @Description:
  * @Auther: logo丶西亚卡姆
@@ -18,5 +20,6 @@ public class Demo {
         String[] split = s2.split("\\.");
         String ss = split[split.length - 1];
         System.out.println(ss);
+        System.out.println(UUID.randomUUID().toString().substring(0,5));
     }
 }
