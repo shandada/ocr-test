@@ -27,12 +27,42 @@
     <!-- dependencyManagement只是用于限定子项目的jar包的版本，不做实际导包操作   -->
     <dependencies>
 
-        <!--        判断中文/汉字字符、字符串大小的比对工具（支持含单个或多个中文/汉字、英文、数字以及特殊字符杂糅的字符串大小比对）-->
-<!--        <dependency>-->
-<!--            <groupId>com.belerweb</groupId>-->
-<!--            <artifactId>pinyin4j</artifactId>-->
-<!--            <version>2.5.0</version>-->
-<!--        </dependency>-->
+        <!--        swagger-ui -->
+        <dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-annotations</artifactId>
+            <version>1.5.21</version>
+        </dependency>
+        <dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-models</artifactId>
+            <version>1.5.21</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>swagger-bootstrap-ui</artifactId>
+            <version>1.9.6</version>
+        </dependency>
+        <!--        swagger-ui -->
+
+
+        <!-- https://mvnrepository.com/artifact/redis.clients/jedis  redis数据库的连接驱动包-->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+
+        <!-- 配置使用redis启动器 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
 
         <!--        httpclient-->
         <dependency>
@@ -73,17 +103,20 @@
             <version>1.2.54</version>
         </dependency>
 
-        <!--        <dependency>-->
-        <!--            <groupId>com.alibaba</groupId>-->
-        <!--            <artifactId>fastjson</artifactId>-->
-        <!--            <version>${alibaba-fastjson.version}</version>-->
-        <!--        </dependency>-->
 
         <!--mybatis-plus-->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>3.3.2</version>
+        </dependency>
+
+        <!--          @Id   @GeneratedValue(generator = "JDBC")-->
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>persistence-api</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
         </dependency>
 
         <!--        mysql-->

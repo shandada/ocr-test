@@ -15,7 +15,7 @@ public class DoGETParam {
         // 创建Httpclient对象
         CloseableHttpClient httpclient = HttpClients.createDefault();
         // 创建URI对象，并且设置请求参数
-        URI uri = new URIBuilder("http://www.baidu.com/s").setParameter("wd", "java").build();
+        URI uri = new URIBuilder("https://news.zhibo8.cc/nba/").setParameter("wd", "java").build();
 
         // 创建http GET请求
         HttpGet httpGet = new HttpGet(uri);

@@ -33,8 +33,5 @@ public class Test01 {
         System.out.println(sb4.delete(2,6));//删除指定范围的字符
         System.out.println(sb4.insert(2,"你好").insert(3,23));//在指定位置插入可以是任意类型
         System.out.println(sb4.replace(2, 5, "good"));//指定位置替换字符串
-
-
     }
-
 }
